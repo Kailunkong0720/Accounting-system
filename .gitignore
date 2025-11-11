@@ -1,0 +1,26 @@
+# 忽略配置文件（如果包含敏感信息）
+# connection.php
+
+# 忽略系統文件
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 忽略編輯器文件
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 忽略日誌文件
+*.log
+
+# 忽略備份文件
+*.bak
+*.backup
+*.old
+
+# 忽略臨時文件
+tmp/
+temp/

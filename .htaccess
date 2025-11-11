@@ -1,0 +1,12 @@
+DirectoryIndex index.php index.html
+
+# 防止列出目錄
+Options -Indexes
+
+# 啟用 URL 重寫
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^$ index.php [L]
+</IfModule>
